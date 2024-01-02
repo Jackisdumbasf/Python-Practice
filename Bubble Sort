@@ -1,0 +1,21 @@
+#Python
+#Bubble Sort
+#Time to code: 11 Minutes
+
+arr = [12, 10, 19, 14, 17, 16]
+def bubbleSort(arr):
+  x = len(arr)
+  swapped = False
+  for i in range(x - 1): 
+    for j in range(0, x - i - 1):
+      if arr[j] > arr[j + 1]:
+        swapped = True
+      else:
+        arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    if not swapped:
+      return
+
+bubbleSort(arr)
+print("Sorted array:")
+for i in range(len(arr)):
+  print("% d" % arr[i], end = " ")
