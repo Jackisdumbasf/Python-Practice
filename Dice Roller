@@ -1,0 +1,10 @@
+#Python
+#Simple dice rolling program
+#Time to code: XX minutes
+
+import random
+def diceRoll():
+  output = random.randint(1,6)
+  return output
+
+diceRoll()
